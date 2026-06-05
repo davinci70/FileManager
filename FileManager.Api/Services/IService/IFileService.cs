@@ -2,5 +2,5 @@
 
 public interface IFileService
 {
-    public Task<Guid> Upload(IFormFile file, CancellationToken cancellationToken = default);
+    public Task<Guid> UploadAsync(IFormFile file, CancellationToken cancellationToken = default);
 }

@@ -5,7 +5,7 @@ public class FileService(IWebHostEnvironment webHostEnvironment, ApplicationDbCo
     private readonly string _filePath = $"{webHostEnvironment.WebRootPath}/uploads";
     private readonly ApplicationDbContext _context = context;
 
-    public async Task<Guid> Upload(IFormFile file, CancellationToken cancellationToken = default)
+    public async Task<Guid> UploadAsync(IFormFile file, CancellationToken cancellationToken = default)
     {
         var randomFileName = Path.GetRandomFileName();
 

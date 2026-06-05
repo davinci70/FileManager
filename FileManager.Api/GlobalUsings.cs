@@ -8,3 +8,4 @@ global using FileManager.Api.Entities;
 global using FileManager.Api.Persistence;
 global using FileManager.Api.Services.Service;
 global using FileManager.Api.Services.IService;
+global using FileManager.Api.Contracts;
