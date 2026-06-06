@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "FileManager.Api.Controllers.FilesController",
+    "Method": "UploadImage",
+    "RelativePath": "api/Files/upload-image",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileManager.Api.Controllers.FilesController",
     "Method": "UploadMany",
     "RelativePath": "api/Files/upload-many",
     "HttpMethod": "POST",

@@ -1,4 +1,4 @@
-﻿namespace FileManager.Api.Contracts;
+﻿namespace FileManager.Api.Contracts.UploadManyFiles;
 
 public record UploadManyFilesRequest(
     IFormFileCollection Files    

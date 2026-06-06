@@ -2,7 +2,8 @@
 
 public class FileService(IWebHostEnvironment webHostEnvironment, ApplicationDbContext context) : IFileService
 {
-    private readonly string _filePath = $"{webHostEnvironment.WebRootPath}/uploads";
+    private readonly string _filesPath = $"{webHostEnvironment.WebRootPath}/uploads";
+    private readonly string _imagesPath = $"{webHostEnvironment.WebRootPath}/images";
     private readonly ApplicationDbContext _context = context;
 
     public async Task<Guid> UploadAsync(IFormFile file, CancellationToken cancellationToken = default)
@@ -31,6 +32,14 @@ public class FileService(IWebHostEnvironment webHostEnvironment, ApplicationDbCo
         return uploadedFiles.Select(x => x.Id).ToList();
     }
 
+    public async Task UploadImageAsync(IFormFile image, CancellationToken cancellationToken = default)
+    {
+        var path = Path.Combine(_imagesPath, image.FileName);
+
+        using var stream = File.Create(path);
+        await image.CopyToAsync(stream, cancellationToken);
+    }
+
     private async Task<UploadedFile> SaveFile(IFormFile file, CancellationToken cancellationToken = default)
     {
         var randomFileName = Path.GetRandomFileName();
@@ -43,7 +52,7 @@ public class FileService(IWebHostEnvironment webHostEnvironment, ApplicationDbCo
             StoredFileName = randomFileName
         };
 
-        var path = Path.Combine(_filePath, randomFileName);
+        var path = Path.Combine(_filesPath, randomFileName);
 
         using var stream = File.Create(path);
         await file.CopyToAsync(stream, cancellationToken);

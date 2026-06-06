@@ -1,6 +1,4 @@
-﻿using FileManager.Api.Contracts.UploadFile;
-
-namespace FileManager.Api.Controllers;
+﻿namespace FileManager.Api.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -22,5 +20,13 @@ public class FilesController(IFileService fileService) : ControllerBase
         var fileIds = await _fileService.UploadManyAsync(request.Files, cancellationToken);
 
         return Ok(fileIds);
+    }
+    
+    [HttpPost("upload-image")]
+    public async Task<IActionResult> UploadImage([FromForm] UploadImageRequest request, CancellationToken cancellationToken)
+    {
+         await _fileService.UploadImageAsync(request.Image, cancellationToken);
+
+        return Created();
     }
 }

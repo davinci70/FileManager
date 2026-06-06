@@ -2,6 +2,7 @@
 
 public interface IFileService
 {
-    public Task<Guid> UploadAsync(IFormFile file, CancellationToken cancellationToken = default);
-    public Task<IEnumerable<Guid>> UploadManyAsync(IFormFileCollection files, CancellationToken cancellationToken = default);
+    Task<Guid> UploadAsync(IFormFile file, CancellationToken cancellationToken = default);
+    Task<IEnumerable<Guid>> UploadManyAsync(IFormFileCollection files, CancellationToken cancellationToken = default);
+    Task UploadImageAsync(IFormFile image, CancellationToken cancellationToken = default);
 }
