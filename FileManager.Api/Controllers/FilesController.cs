@@ -1,4 +1,6 @@
-﻿namespace FileManager.Api.Controllers;
+﻿using FileManager.Api.Contracts.UploadFile;
+
+namespace FileManager.Api.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]

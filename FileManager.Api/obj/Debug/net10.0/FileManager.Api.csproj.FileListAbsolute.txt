@@ -159,3 +159,6 @@ C:\Users\pc\My_battlefield\APIs\FileManager\FileManager.Api\obj\Debug\net10.0\Fi
 C:\Users\pc\My_battlefield\APIs\FileManager\FileManager.Api\obj\Debug\net10.0\ref\FileManager.Api.dll
 C:\Users\pc\My_battlefield\APIs\FileManager\FileManager.Api\bin\Debug\net10.0\FileManager.Api.staticwebassets.runtime.json
 C:\Users\pc\My_battlefield\APIs\FileManager\FileManager.Api\obj\Debug\net10.0\FileManager.Api.sourcelink.json
+C:\Users\pc\My_battlefield\APIs\FileManager\FileManager.Api\bin\Debug\net10.0\FluentValidation.dll
+C:\Users\pc\My_battlefield\APIs\FileManager\FileManager.Api\bin\Debug\net10.0\FluentValidation.AspNetCore.dll
+C:\Users\pc\My_battlefield\APIs\FileManager\FileManager.Api\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll

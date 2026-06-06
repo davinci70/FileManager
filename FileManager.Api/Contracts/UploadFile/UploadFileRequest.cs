@@ -1,4 +1,4 @@
-﻿namespace FileManager.Api.Contracts;
+﻿namespace FileManager.Api.Contracts.UploadFile;
 
 public record UploadFileRequest(
     IFormFile File    

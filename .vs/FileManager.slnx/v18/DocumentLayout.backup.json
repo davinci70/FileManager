@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\pc\\My_battlefield\\APIs\\FileManager\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B42FE59F-B77F-EDBA-C50D-F19BFED4C402}|FileManager.Api\\FileManager.Api.csproj|c:\\users\\pc\\my_battlefield\\apis\\filemanager\\filemanager.api\\contracts\\uploadfile\\uploadfilerequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42FE59F-B77F-EDBA-C50D-F19BFED4C402}|FileManager.Api\\FileManager.Api.csproj|solutionrelative:filemanager.api\\contracts\\uploadfile\\uploadfilerequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B42FE59F-B77F-EDBA-C50D-F19BFED4C402}|FileManager.Api\\FileManager.Api.csproj|c:\\users\\pc\\my_battlefield\\apis\\filemanager\\filemanager.api\\controllers\\filescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B42FE59F-B77F-EDBA-C50D-F19BFED4C402}|FileManager.Api\\FileManager.Api.csproj|solutionrelative:filemanager.api\\controllers\\filescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,20 +38,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FileService.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\My_battlefield\\APIs\\FileManager\\FileManager.Api\\Services\\Service\\FileService.cs",
-              "RelativeDocumentMoniker": "FileManager.Api\\Services\\Service\\FileService.cs",
-              "ToolTip": "C:\\Users\\pc\\My_battlefield\\APIs\\FileManager\\FileManager.Api\\Services\\Service\\FileService.cs",
-              "RelativeToolTip": "FileManager.Api\\Services\\Service\\FileService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBkAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UploadFileRequestValidator.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\My_battlefield\\APIs\\FileManager\\FileManager.Api\\Contracts\\UploadFile\\UploadFileRequestValidator.cs",
+              "RelativeDocumentMoniker": "FileManager.Api\\Contracts\\UploadFile\\UploadFileRequestValidator.cs",
+              "ToolTip": "C:\\Users\\pc\\My_battlefield\\APIs\\FileManager\\FileManager.Api\\Contracts\\UploadFile\\UploadFileRequestValidator.cs",
+              "RelativeToolTip": "FileManager.Api\\Contracts\\UploadFile\\UploadFileRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-05T09:29:22.737Z",
+              "WhenOpened": "2026-06-05T09:52:45.535Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\My_battlefield\\APIs\\FileManager\\FileManager.Api\\Services\\Service\\FileService.cs",
+              "RelativeDocumentMoniker": "FileManager.Api\\Services\\Service\\FileService.cs",
+              "ToolTip": "C:\\Users\\pc\\My_battlefield\\APIs\\FileManager\\FileManager.Api\\Services\\Service\\FileService.cs",
+              "RelativeToolTip": "FileManager.Api\\Services\\Service\\FileService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T09:29:22.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "IFileService.cs",
               "DocumentMoniker": "C:\\Users\\pc\\My_battlefield\\APIs\\FileManager\\FileManager.Api\\Services\\IService\\IFileService.cs",
               "RelativeDocumentMoniker": "FileManager.Api\\Services\\IService\\IFileService.cs",
@@ -55,21 +71,19 @@
               "RelativeToolTip": "FileManager.Api\\Services\\IService\\IFileService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-05T09:26:09.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-05T09:26:09.691Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FilesController.cs",
               "DocumentMoniker": "C:\\Users\\pc\\My_battlefield\\APIs\\FileManager\\FileManager.Api\\Controllers\\FilesController.cs",
               "RelativeDocumentMoniker": "FileManager.Api\\Controllers\\FilesController.cs",
               "ToolTip": "C:\\Users\\pc\\My_battlefield\\APIs\\FileManager\\FileManager.Api\\Controllers\\FilesController.cs",
               "RelativeToolTip": "FileManager.Api\\Controllers\\FilesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-05T08:47:47.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-05T08:47:47.544Z"
             }
           ]
         }
