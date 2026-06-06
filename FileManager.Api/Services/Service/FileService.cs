@@ -60,7 +60,7 @@ public class FileService(IWebHostEnvironment webHostEnvironment, ApplicationDbCo
 
     public async Task<(FileStream? stream, string contentType, string fileName)> StreamAsync(Guid id, CancellationToken cancellationToken = default)
     {
-        var file = await _context.Files.FindAsync(id);
+        var file = await _context.Files.FindAsync(id, cancellationToken);
 
         if (file is null)
             return (null, string.Empty, string.Empty);

@@ -43,6 +43,6 @@ public class FilesController(IFileService fileService) : ControllerBase
     {
          var (stream, contentType, fileName) = await _fileService.StreamAsync(id, cancellationToken);
 
-        return stream is null ? NotFound() : File(stream, contentType, fileName, enableRangeProcessing: true);
+        return stream is null ? NotFound() : File(stream, contentType, enableRangeProcessing: true);
     }
 }
