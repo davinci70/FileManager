@@ -141,5 +141,4 @@ This project demonstrates practical experience with:
 
 ## Author
 
-Mohammed Ahmed Ibrahim
-.NET Developer
+Mohammed Ahmed Ibrahim - .NET Developer
