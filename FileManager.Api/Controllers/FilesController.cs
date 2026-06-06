@@ -41,7 +41,7 @@ public class FilesController(IFileService fileService) : ControllerBase
     [HttpGet("stream/{id}")]
     public async Task<IActionResult> Stream([FromRoute] Guid id, CancellationToken cancellationToken)
     {
-         var (stream, contentType, fileName) = await _fileService.StreamAsync(id, cancellationToken);
+         var (stream, contentType) = await _fileService.StreamAsync(id, cancellationToken);
 
         return stream is null ? NotFound() : File(stream, contentType, enableRangeProcessing: true);
     }
