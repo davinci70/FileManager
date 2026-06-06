@@ -11,7 +11,7 @@ public class FilesController(IFileService fileService) : ControllerBase
     {
         var fileId = await _fileService.UploadAsync(request.File, cancellationToken);
 
-        return Created();
+        return CreatedAtAction(nameof(Download), new {id = fileId}, null);
     }
     
     [HttpPost("upload-many")]
@@ -28,5 +28,13 @@ public class FilesController(IFileService fileService) : ControllerBase
          await _fileService.UploadImageAsync(request.Image, cancellationToken);
 
         return Created();
+    }
+    
+    [HttpGet("download/{id}")]
+    public async Task<IActionResult> Download([FromRoute] Guid id, CancellationToken cancellationToken)
+    {
+         var (fileContent, contentType, fileName) = await _fileService.DownloadAsync(id, cancellationToken);
+
+        return fileContent is [] ? NotFound() : File(fileContent, contentType, fileName);
     }
 }

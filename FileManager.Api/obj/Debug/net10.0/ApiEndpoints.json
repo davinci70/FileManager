@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "FileManager.Api.Controllers.FilesController",
+    "Method": "Download",
+    "RelativePath": "api/Files/download/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileManager.Api.Controllers.FilesController",
     "Method": "Upload",
     "RelativePath": "api/Files/upload",
     "HttpMethod": "POST",
